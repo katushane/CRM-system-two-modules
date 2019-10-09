@@ -1,0 +1,86 @@
+.for-service.example-switchbox {
+	position: relative;
+	display: inline-block;
+	width: 2.4em;
+	height: 0.8em;
+	padding: .125em;
+	overflow: hidden;
+	box-sizing: content-box;
+	border: 2px solid #60c9ff;
+	outline: none;
+	border-radius: .75em;
+	background-color: white;
+	font-size: 1.25em;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: .15s ease-out;
+}
+.for-service.example-switchbox::before {
+	position: relative;
+	z-index: 2;
+	display: block;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	background-color: #00a8ff;
+	content: '';
+	transition: .15s ease-out;
+}
+.example-switchbox + label {
+	vertical-align: middle;
+}
+.example-switchbox-yes,
+.example-switchbox-no {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%);
+	font-size: .75em;
+	text-transform: uppercase;
+	pointer-events: none;
+	transition: inherit;
+}
+.example-switchbox-yes {
+	left: .75em;
+	color: white;
+	font-weight: bold;
+	opacity: 1;
+}
+.example-switchbox-no {
+	right: .75em;
+	color: darkgrey;
+	opacity: 1;
+}
+/*.for-service.example-switchbox:hover,
+.for-service.example-switchbox:focus {
+	border-color: var(--theme);  You probably need to change this! 
+	box-shadow: 0 0 .25em var(--theme); /* You probably need to change this too! 
+}*/
+.for-service.example-switchbox:hover::before,
+.for-service.example-switchbox:focus::before {
+	background-color: #00a8ff; /* You probably need to change this! */
+}
+
+.for-service.example-switchbox.is-pressed {
+	border-color: #60c9ff; /* You probably need to change this! */
+	background-color: #60c9ff; /* You probably need to change this too! */
+}
+.example-switchbox.is-pressed .example-switchbox-yes {
+	opacity: 1;
+}
+.example-switchbox.is-pressed .example-switchbox-no {
+	opacity: 1;
+}
+.for-service.example-switchbox.is-pressed::before {
+	transform: translateX(2em);
+	right:.5em;
+	background-color: white;
+}
+.for-service.example-switchbox.is-pressed:hover,
+.for-service.example-switchbox.is-pressed:focus {
+	border-color: #60c9ff;
+}
+.for-service.example-switchbox.is-pressed:hover::before,
+.for-service.example-switchbox.is-pressed:focus::before {
+	background-color: white;
+}

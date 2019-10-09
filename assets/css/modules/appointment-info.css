@@ -1,0 +1,476 @@
+/* ВТОРАЯ ВКЛАДКА */
+
+/* Инфо-блок */
+
+.visit-info{
+    --visit-anim-speed: 0.3s;
+}
+.visit-info button{
+    border: none;
+}
+.visit-info_editing{
+
+}
+
+.visit-info__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-list {
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.info-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-list__title {
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.info-list__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    font-weight: lighter;
+    transition: all var(--visit-anim-speed);
+    padding:2px;
+}
+
+.info-list__name-btn{
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    font-weight: lighter;
+    border: none;
+    background-color: transparent;
+    transition: all var(--visit-anim-speed);
+}
+
+.info-list__name-btn_show{
+    cursor:pointer;
+}
+.info-list__name-btn_show .info-list__name{
+    color: var(--main-color-blue);
+}
+.info-list__name-btn_show .info-list__name-btn-icon{
+    transform: scale(1);
+}
+
+.info-list__name-btn-icon{
+    transition: all var(--visit-anim-speed);
+    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+    background-color: var(--main-color-blue);
+    display: flex;
+}
+
+.simple-category__chosen-num_show{
+    transform: scale(1);
+}
+
+.info-list__name-btn-icon i{
+    font-size: 12px;
+    color: var(--main-color-white);
+}
+
+.info-list__name-btn-icon_show{
+    display: flex;
+}
+
+/* Статус-блок */
+
+.visit-info__statuses {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--main-color-gray);
+}
+
+.statuses {
+    justify-content: space-between;
+    display: flex;
+    width: 70%;
+    padding: 20px 0;
+}
+
+.statuses__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    padding: 10px 0;
+}
+
+.status__group {
+    display: flex;
+    align-items: center;
+}
+
+.status__title {
+    display: flex;
+    margin: 0 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.status__subtitle {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 10px 0;
+    color: var(--main-color-gray);
+}
+
+.status__text_sup {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: -5px 0 0 5px;
+    color: var(--main-color-gray);
+}
+
+.status-list li span {
+    margin: 0 0 10px 3px;
+    font-size: 12px;
+    color: dimgray;
+}
+
+.status__icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 4px var(--main-color-gray);
+}
+
+.status__icon_color_orange {
+    border-color: orange;
+}
+
+.status__icon_color_blue {
+    border-color: cornflowerblue;
+}
+
+.status__icon_color_red {
+    border-color: red;
+}
+
+.status__icon_color_violet {
+    border-color: plum;
+}
+
+/* Сервис-аватар-блок */
+
+.visit-info__master{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--main-color-gray);
+}
+
+.master-info {
+    display: flex;
+    width: 50%;
+    margin: -35px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.master-info__avatar {
+    transform: scale(0);
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+    z-index: 2;
+    transition: var(--visit-anim-speed);
+}
+
+.master-info__avatar img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.master-info__avatar_show {
+    transform: scale(1);
+    top:0;
+    position: absolute;
+}
+
+.master-info__name {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 5px 0;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.master-info__specialisation {
+    margin: 5px 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--main-color-gray);
+}
+
+/* Сервис-блок */
+
+.visit-info__appointments {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid var(--main-color-gray);
+}
+
+.appointment {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.appointment__column{
+    display: flex;
+    flex-direction: row;
+    transition: all var(--visit-anim-speed);
+}
+
+.appointment__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment__title {
+    display: flex;
+    align-items: center;
+}
+
+.appointment__name{
+    display: block;
+    align-items: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.appointment__sale{
+    display: none;
+    align-items: center;
+    margin: 0;
+}
+
+.appointment__sale img{
+    width: 45px;
+    height: 25px;
+    margin: 0 0 0 5px;
+}
+
+.appointment__subtitle {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--main-color-gray);
+}
+
+.appointment__delete{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width:0;
+    border: none;
+    background: transparent;
+    transition: all var(--visit-anim-speed);
+}
+
+.appointment__delete i{
+    transition: all var(--visit-anim-speed);
+    font-size: 20px;
+    transform: scale(0);
+    color: var(--main-color-red);
+}
+
+
+/* modifictori */
+
+
+/* модификатор unavailable  для недоступной услуги */
+
+.appointment_unavailable  .appointment__title{
+    text-decoration: line-through var(--main-color-red);
+    opacity: 0.75;
+}
+
+.appointment_unavailable  .appointment__subtitle{
+    color: var(--sub-color-red);
+}
+
+.appointment_unavailable  .appointment__item_right{
+    visibility: hidden;
+}
+
+/* модификатор discounted  для отображения со скидкой */
+
+.appointment__discounted  .appointment__sale{
+    display: flex;
+}
+
+/* модификатор normal для отображения досутпной услуги без скидки */
+
+.appointment_normal  .appointment__item_line_gray{
+    visibility: hidden;
+}
+
+/* модификатор отображения/скрытия корзины */
+
+.appointment__delete_show{
+    min-width: 40px;
+}
+.appointment__delete_show i{
+    transform: scale(1);
+}
+
+/* точетный модификатор для span для перечеркивания (цвет серый) + размер текста */
+
+.appointment__item_line_gray {
+    text-decoration: line-through;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0 10px 0 0;
+    color: var(--main-color-gray);
+}
+.appointment__item_line_red {
+    text-decoration: line-through var(--main-color-red);
+    opacity: 0.6;
+}
+
+.appointment__item_red_text{
+    color: var(--sub-color-red);
+}
+
+.appointment__discount {
+    margin: 0 0 0 -25px;
+    font-weight: 300;
+    font-size: 0.6rem;
+}
+
+.appointment__item_rmargin{
+    margin: 0 5px 0 0;
+}
+
+
+
+
+.visit-info__add-appointment {
+    transform: scale(0);
+    transition: all var(--visit-anim-speed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -23px 0 0 0;
+}
+.visit-info__add-appointment_show{
+    transform: scale(1);
+}
+
+.add-button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--main-color-green) ;
+}
+
+
+
+.add-button i{
+    font-size: 25px;
+    color: var(--main-color-white);
+}
+
+.add-visit__client-add-btn img {
+    width: 45px;
+    height: 45px;
+    margin: 0 0 10px 0;
+}
+
+/* Итог-блок */
+
+.visit-info__end {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.accept {
+    display: flex;
+    transform: scale(0);
+    transition: all var(--visit-anim-speed);
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 5px 0;
+    margin: 30px 0 30px 0;
+    border: 1px solid var(--main-color-gray) !important;
+    border-radius: 5px;
+    background-color: var(--main-color-white);
+}
+
+.accept__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color-green);
+    margin: 0 5px 0 0;
+}
+
+.accept__icon i{
+    font-size: 10px;
+    color: var(--main-color-white);
+}
+
+.accept_show{
+    top: 0;
+    position: absolute;
+    transform: scale(1);
+}
+.accept__text{
+    display: flex;
+}
+
+.accept_delete{
+    background-color: var(--main-color-red);
+}
+
+.tpl-main__tabcontent {
+
+}
+
+
+
+@media (max-width: 760px) {
+    /*.visit-info_wrapper{
+        margin: 40px 0 50px 0;
+    }*/
+}

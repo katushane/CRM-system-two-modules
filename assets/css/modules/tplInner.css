@@ -1,0 +1,102 @@
+.inner-tpl-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+.inner-tpl-header-component{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.inner-tpl-header-component h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.inner-tpl-header-component i{
+    color: var(--main-color-black);
+    /*Плюс новый стиль*/
+    font-size: 1.3rem;
+}
+
+.inner-tpl-header-right.hidden{
+    opacity: 0;
+    cursor: default;
+    display: block!important;
+}
+
+.inner-tpl-main-content-component{
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    right: -100%;
+    transition: all 1s;
+
+    width: 100%;
+    height: 100%;
+}
+
+.inner-tpl-main-content-component-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+.inner-tpl-main-content-component-header h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.inner-tpl-main-content-component-header i{
+    font-size: 1.625rem;
+}
+
+.inner-tpl-open{
+    right: 0;
+}
+
+
+@media (max-width: 760px) {
+    
+    .inner-tpl-header-wrapper{
+        height: 6vh;
+    }
+
+    .inner-tpl-main-content-component p{
+        font-size: 0.75rem;
+    }
+    .inner-tpl-main-content-component-header{
+        height: 6vh;
+    }
+
+    .inner-tpl-main-content-component-header h2{
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .inner-tpl-main-content-component-header i{
+        font-size: 1.25rem;
+    }
+
+    .inner-tpl-header-component h2{
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .inner-tpl-header-component i{
+        font-size: 1rem;
+    }
+}

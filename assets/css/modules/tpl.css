@@ -1,0 +1,315 @@
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+:root{
+    --main-color-white: #fff;
+    --main-color-black: #333333;
+    --main-color-gray: #b2b2b2;
+    --tpl-size: 700px;
+    --tpl-speed: 0.5s;
+}
+
+.tpl-wrapper button{
+    border: none;
+    background: none;
+}
+
+/* Общий враппер тплки*/
+
+.tpl-wrapper{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    box-shadow: -10px 0px 20px rgba(122,122,122,0.5);
+    width: var(--tpl-size);
+    right: calc(-1*(var(--tpl-size) + 20px));
+    top:0;
+    background-color: white;
+    z-index: 100;
+    transition: right var(--tpl-speed);
+}
+.tpl-opened{
+    right: 0px;
+}
+/* Общий враппер хэдэра*/
+
+.tpl-header-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+    /*border-bottom: 1px solid var(--main-color-gray);*/
+}
+
+/* Общий враппер хэдэра (КОМПОНЕНТ-ЗАГЛУШКА)*/
+
+.tpl-header-component{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.tpl-header-component h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.tpl-header-component i{
+    color: var(--main-color-black);
+    /*Плюс новый стиль*/
+    font-size: 1.3rem;
+}
+
+/* Общий враппер мэйн-контента*/
+
+.tpl-main-wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    /*Плюс новый стиль*/
+    flex-direction: column;
+}
+
+/* Общий враппер навигации (слева) */
+
+.tpl-main-asside-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 180px;
+
+    /*border-right: 1px solid var(--main-color-gray);*/
+    /*Плюс новый стиль*/
+    justify-content: center;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.1);
+}
+
+.tpl-main-asside-wrapper ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+    /*Плюс новый стиль*/
+    display: flex;
+}
+
+.tpl-main-asside-wrapper li{
+    width: auto;
+
+    /*margin: 15px 0;*/
+    /*Плюс новый стиль*/
+    margin: 15px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.tpl-main-asside-wrapper li button{
+    padding: 0 5px;
+    /*Плюс новый стиль*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tpl-main-asside-wrapper li i{
+    width: 15px;
+    height: auto;
+
+    margin: 0 15px 0 0;
+
+    font-size: 1.3rem;
+    transition: color 0.1s;
+    /*color: var(--main-color-gray);*/
+    /*Плюс новый стиль*/
+    align-self: center;
+}
+.tpl-main-asside-wrapper li:not(.menu-el-active):hover button:not(.tpl-menu-button__locked), .tpl-main-asside-wrapper li:not(.menu-el-active):hover>button:not(.tpl-menu-button__locked) i{
+    /*color: var(--main-color-lightblue);*/
+    color: #AC74BA;
+}
+/* Общий враппер контента (справа) */
+
+.tpl-main-content-wrapper{
+    /*position: relative;*/
+    width: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    height: 100%;
+}
+
+
+@media (max-width: 760px) {
+
+    .tpl-wrapper{
+        width: 100vw;
+        height: auto;
+    }
+
+    .tpl-main-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 94vh;
+    }
+
+    .tpl-header-wrapper{
+        height: 6vh;
+        border-left: none;
+    }
+
+    .tpl-main-asside-wrapper{
+        align-items: center;
+
+        width: 100%;
+        height: 10%;
+
+        /*order: 2;*/
+
+        /*border-top: 1px solid var(--main-color-gray);*/
+        border-left: none;
+        border-right: none;
+    }
+
+    .tpl-main-content-wrapper{
+        width: 100%;
+        height: 90%;
+
+        order: 1;
+
+        margin: 0;
+    }
+
+    .tpl-main-asside-wrapper ul{
+        display: flex;
+        /*align-items: center;*/
+
+        margin: 0;
+        padding: 0;
+
+        width: 100vw;
+        /*Плюс новый стиль*/
+        justify-content: center;
+    }
+
+    .tpl-main-asside-wrapper li{
+        display: flex;
+        justify-content: center;
+
+        text-align: center;
+        margin: 0;
+        width: 20%;
+    }
+
+    .tpl-main-asside-wrapper li button{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        transition: color 0.1s;
+        color: var(--main-color-gray);
+        font-size: 0.625rem;
+        margin: 0;
+    }
+
+    .tpl-main-asside-wrapper li i{
+        width: auto;
+        margin: 0 ;
+    }
+
+    .tpl-header-component h2{
+        font-size: 1rem;
+        font-weight: normal;
+
+        margin: 0;
+    }
+
+    .tpl-header-component i{
+        font-size: 1rem;
+
+        color: var(--main-color-gray);
+    }
+
+    .tpl-main-asside-wrapper li i{
+        margin: 0 0 4px 0;
+
+        font-size: 1rem;
+    }
+
+}
+
+.menu-el-active button,.menu-el-active i{
+    /*color:var(--main-color-blue) !important;*/
+    color: #AC74BA !important;
+}
+
+
+.forcenter{
+    float: right;
+    height: 100%;
+}
+.forcenter-in{
+    padding: 40px 20px 20px;
+}
+
+.tpl-header-right.hidden{
+    opacity: 0;
+    cursor: default;
+    display: block!important;
+}
+
+/*Стили кнопок меню*/
+
+.tpl-menu-button__locked {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Неактивные бутстрап-селекты*/
+
+.blockCanBeReadOnly .btn-group.bootstrap-select.disabled {
+  width: 100%;
+  opacity: 1;
+}
+
+.blockCanBeReadOnly .btn-group.bootstrap-select.disabled .bs-caret {
+  opacity: 0;
+}
+
+.blockCanBeReadOnly .btn-group.bootstrap-select.disabled > .btn.dropdown-toggle.disabled .filter-option{
+  color: #343434 !important;
+}
+
+.blockCanBeReadOnly .btn-group.bootstrap-select.disabled>.btn.dropdown-toggle.disabled, .blockCanBeReadOnly .btn-group.bootstrap-select>.btn.dropdown-toggle{
+  background-color: #fff!important; 
+  border: 1px solid #00000026;
+  opacity: 1;
+} 
+
+.blockCanBeReadOnly .btn-group.bootstrap-select.disabled>.btn.dropdown-toggle.disabled {
+  cursor: default;
+}
+
+/*Анимация переключения кнопок меню*/
+
+.menu-el-active::before{
+    content: '';
+    background-color: blue;
+    opacity: 0.5;
+/*  animation: anim-effect;*/
+
+}
+
+/*@keyframes anim-effect {}*/
+

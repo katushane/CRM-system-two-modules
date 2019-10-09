@@ -1,0 +1,153 @@
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Regular.eot');
+      src: url('../fonts/Proxima_Nova_Regular.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Regular.woff2') format('woff2'), url('../fonts/Proxima_Nova_Regular.woff') format('woff'), url('../fonts/Proxima_Nova_Regular.ttf') format('truetype'), url('../fonts/Proxima_Nova_Regular.svg#Proxima_Nova_Regular') format('svg');
+      font-style: normal;
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Regular_Italic.eot');
+      src: url('../fonts/Proxima_Nova_Regular_Italic.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Regular_Italic.woff2') format('woff2'), url('../fonts/Proxima_Nova_Regular_Italic.woff') format('woff'), url('../fonts/Proxima_Nova_Regular_Italic.ttf') format('truetype'), url('../fonts/Proxima_Nova_Regular_Italic.svg#Proxima_Nova_Regular_Italic') format('svg');
+      font-style: italic;
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Bold.eot');
+      src: url('../fonts/Proxima_Nova_Bold.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Bold.woff2') format('woff2'), url('../fonts/Proxima_Nova_Bold.woff') format('woff'), url('../fonts/Proxima_Nova_Bold.ttf') format('truetype'), url('../fonts/Proxima_Nova_Bold.svg#Proxima_Nova_Bold') format('svg');
+      font-style: normal;
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Bold_Italic.eot');
+      src: url('../fonts/Proxima_Nova_Bold_Italic.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Bold_Italic.woff2') format('woff2'), url('../fonts/Proxima_Nova_Bold_Italic.woff') format('woff'), url('../fonts/Proxima_Nova_Bold_Italic.ttf') format('truetype'), url('../fonts/Proxima_Nova_Bold_Italic.svg#Proxima_Nova_Bold_Italic') format('svg');
+      font-style: italic;
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Semibold.eot');
+      src: url('../fonts/Proxima_Nova_Semibold.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Semibold.woff2') format('woff2'), url('../fonts/Proxima_Nova_Semibold.woff') format('woff'), url('../fonts/Proxima_Nova_Semibold.ttf') format('truetype'), url('../fonts/Proxima_Nova_Semibold.svg#Proxima_Nova_Semibold') format('svg');
+      font-style: normal;
+      font-weight: 600;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Semibold_Italic.eot');
+      src: url('../fonts/Proxima_Nova_Semibold_Italic.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Semibold_Italic.woff2') format('woff2'), url('../fonts/Proxima_Nova_Semibold_Italic.woff') format('woff'), url('../fonts/Proxima_Nova_Semibold_Italic.ttf') format('truetype'), url('../fonts/Proxima_Nova_Semibold_Italic.svg#Proxima_Nova_Semibold_Italic') format('svg');
+      font-style: italic;
+      font-weight: 600;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Light.eot');
+      src: url('../fonts/Proxima_Nova_Light.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Light.woff2') format('woff2'), url('../fonts/Proxima_Nova_Light.woff') format('woff'), url('../fonts/Proxima_Nova_Light.ttf') format('truetype'), url('../fonts/Proxima_Nova_Light.svg#Proxima_Nova_Light') format('svg');
+      font-style: normal;
+      font-weight: 300;
+    }
+    @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../fonts/Proxima_Nova_Light_Italic.eot');
+      src: url('../fonts/Proxima_Nova_Light_Italic.eot') format('embedded-opentype'), url('../fonts/Proxima_Nova_Light_Italic.woff2') format('woff2'), url('../fonts/Proxima_Nova_Light_Italic.woff') format('woff'), url('../fonts/Proxima_Nova_Light_Italic.ttf') format('truetype'), url('../fonts/Proxima_Nova_Light_Italic.svg#Proxima_Nova_Light_Italic') format('svg');
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    body {
+    	margin: 0;
+    	height: 100vh;
+    	overflow: hidden;
+    }
+
+    .login {
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+    	width: 100%;
+    	height: 100%;
+    	background-color: #eceff4;
+    }
+    .login__auth {
+    	width: 320px;
+    	height: 420px;
+    }
+
+    .auth-form {
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: center;
+    	align-items: center;
+    	background-color: #fff;
+    	border: 1px solid #d8e2e7;
+    	border-radius: 5px;
+    }
+    .auth-form__section {
+    	margin: 10px;
+    	width: 100%;
+    	height: auto;
+    }
+
+    .titled-img {
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+
+    	/*запретить выделение текста*/
+    	-ms-user-select: none;
+    	-moz-user-select: none;
+    	-khtml-user-select: none;
+    	-webkit-user-select: none;
+    }
+    .titled-img__img {
+    	width: 100px;
+    	height: 100px;
+    	margin: 10px;
+    }
+    .titled-img__title {
+    	font-family: 'Proxima Nova', sans-serif;
+    	font-size: 1.25rem;
+    	color: #343434;
+    	margin: 10px;
+    	cursor: default;
+    }
+
+    .form-fields {
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+    }
+    .form-fields__input {
+    	width: 80%;
+    	height: 38px;
+    	border: 1px solid #d8e2e7;
+    	border-radius: 5px;
+    	font-family: 'Proxima Nova', sans-serif;
+    	font-size: 1rem;
+    	color: #999;
+    	margin: 5px;
+    	padding: 0 15px;
+    }
+
+    .button-standart {
+    	display: flex;
+    	flex-flow: column nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+    }
+    .button-standart__button {
+    	width: 108px;
+    	height: 38px;
+    	background-color: #00a8ff;
+    	border: none;
+    	border-radius: 25rem;
+    	font-family: 'Proxima Nova', sans-serif;
+    	font-size: 1rem;
+    	color: #fff;
+    	margin: 5px;
+    	cursor: pointer;
+    }

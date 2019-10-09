@@ -1,0 +1,116 @@
+/*кнопка*/
+.plusBlock{
+  margin-right: 10px;
+  border-radius: 100%;
+  border: 1px solid #5dcf5d;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  color: #5dcf5d;
+}
+.avatar-1-128 {
+text-align: center;
+padding-bottom: 20px;
+}
+
+.dd3-content{
+  height: 30px;
+  margin: 30px 20px;
+  padding: 5px 10px 5px 40px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #d8e2e7;
+  background: #fff;
+  -webkit-border-radius: .25rem;
+  border-radius: .25rem;
+}
+.new-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card-row-name.service-name {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.right-block .service-price {
+  font-weight: 500;
+  font-size: 1rem;
+  align-self: flex-end;
+}
+
+.row .endprice {
+  font-weight:600;
+}
+
+.grey {
+  color:#919fa9;
+}
+
+.service-price-ex {
+  line-height:25px;
+  text-decoration: line-through;
+}
+
+.service-time {
+  align-self:flex-end;
+}
+
+.right-block {
+  display:flex;
+  flex-direction:column;
+}
+
+.right-block-prices {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.service-card {
+  margin: 20px 0px;
+}
+
+.service-name-and-label {
+display:flex;
+flex-direction:row;
+}
+
+.service-label {
+  position: relative;
+  margin:auto 0px auto 15px;
+}
+
+.service-label-percent {
+  position:absolute;
+  top:0;
+  color:white;
+  font-size:0.8em;
+  left:4px;
+}
+
+.addbutton {
+  position:absolute;
+  margin-left: 45%;
+  margin-top:-18.5px;
+}
+
+.profile-card.master {
+  position:absolute;
+  margin-left: 42%;
+  padding:0px 0px !important;
+  margin-top: -35px;
+}
+
+.profile-card.master .profile-card-photo {
+  height:70px;
+  width:70px;
+  padding:0px;
+}
+#f_mainRecord{
+  padding: 0 10px;
+}

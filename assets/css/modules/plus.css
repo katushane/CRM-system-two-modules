@@ -1,0 +1,26 @@
+.add-button:hover {
+
+    background-color: #00B8FF;
+
+}
+
+.add-button {
+
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #00A8FF;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+    border-style: none;
+    box-shadow: 0 10px 10px 0 rgba(60,60,60,.1);
+    z-index: 80;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

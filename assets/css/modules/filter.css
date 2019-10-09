@@ -1,0 +1,81 @@
+.filters-block {
+    flex-basis: 20%;
+    display: flex;
+    /* height: fit-content; */
+    flex-direction: column;
+    margin-left: 3vw;
+    padding: 44px 15px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    margin-right: -15px;
+}
+
+.filter__content {
+	margin-top: 20px;
+	display: none;
+}
+
+.filter__content.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter__content-block {
+	margin-top: 20px;
+    width: 95% !important;
+}
+
+.filter-lot {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filter-lot__elem {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters-block .forcalendar .active i:first-child {
+    color: #00A8FF;
+}
+    
+.filter-blocks .forlikes .active i:first-child {
+    color: #f18482;
+}
+
+
+.filter__content-block.forstars {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filters-block .font-icon-star {
+    margin: 0px 3px;
+}
+
+@media (max-width:756px) {
+    .filters-block {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 100%;
+  }
+
+  .filters-block .btn.btn-inline {
+    width: 90%;
+  }
+
+  .filters-block .filter-buttons__show, .filters-block .filter-buttons__cancel {
+    flex-basis: 50%;
+  }
+}

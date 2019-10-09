@@ -1,0 +1,251 @@
+/*кнопка*/
+.plusBlock{
+  margin-right: 10px;
+  border-radius: 100%;
+  border: 1px solid #5dcf5d;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  color: #5dcf5d;
+}
+.dd3-content{
+  height: 30px;
+  margin: 5px 0;
+  padding: 5px 10px 5px 40px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #d8e2e7;
+  background: #fff;
+  -webkit-border-radius: .25rem;
+  border-radius: .25rem;
+}
+#create{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#create:hover{
+  cursor: pointer;
+}
+.for-panel-title{
+  font-weight:normal;
+}
+.for-panel-heading{
+  padding-left:5px;
+}
+/*основной блок*/
+.notesPanel{
+  background: #fff;
+}
+.notesArticle{
+  cursor: pointer;
+}
+
+/*внутренний блок*/
+#emotionLock{
+  display: none;
+  height: 56px;
+  position: absolute;
+  width: 100%;
+}
+.note-emotion-icons{
+  display: flex;
+  justify-content: space-between;
+}
+.note-emotion-icon{
+  font-size: 40px;
+}
+.note-emotion-icon:hover{
+  cursor: pointer;
+}
+
+.note-emotion-icon.unselected {
+  opacity: 0.6;
+}
+
+.notesAccept{
+    color: #ADB7BE;
+    cursor: pointer;
+}
+.notesAccept:hover{
+    opacity: 1;
+    color: #16b4fc!important;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+/*Новые стили*/
+.notes-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.note-block {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    line-height: 20px;
+    color: #646464;
+}
+
+.notes-bar .services-bar__sort {
+    text-align: left;
+}
+
+.note-block__head, .note-block__body {
+    margin-bottom: 10px;
+}
+
+.note-block__body {
+  align-self: start;
+  margin-top: 10px;
+}
+
+
+.note-block__head {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.note-block__head-left-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.note-block_client-photo, .note-block_client-emotion {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+}
+
+.note-block_chosen-emotion {
+    width: 60px;
+    height: 60px;
+}
+
+.inner-note-emotions-view {
+  display: flex;
+  justify-content: center;
+}
+
+.note-block_title-and-date {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.note-block_client-title {
+    font-weight: 500;
+    color: #000000;
+}
+
+.note-block_date {
+    font-size: 14px;
+}
+
+.note-block__head-right-side {
+    display: flex;
+}
+
+@media (max-width:756px) {
+
+  .notes-bar .services-bar__sort {
+    display: block;
+    flex-basis: 50%;
+  }
+
+   .inner-note-element {
+   width: 90% !important;
+  }
+
+} 
+/*Iphone X*/
+@media (min-width:374px) {
+ 
+} 
+
+
+/*Новое*/
+#f_innerNotes {
+  display: flex;
+  flex-direction: column;
+}
+.inner-note-element {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+#f_innerNotes input {
+  height: 48px;
+}
+
+#f_innerNotes textarea {
+  height: 189px;
+}
+
+.wrap-button {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap-button i {
+  margin-left: -17px;
+  transition: all 0.2s linear;
+}
+
+.wrap-button i.transform {
+  transform: rotateX(180deg);
+  animation-delay: 0ms;
+}
+
+
+.hidden-emotions {
+  margin-top: 35px;
+  transition: all 1s;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.toggle-emotions-down {
+  display: flex;
+  animation: slide-down .2s ease-out;
+}
+
+.toggle-emotions-up {
+  display: none;
+  /*opacity: 0;*/
+  animation: slide-up .2s ease-out;
+}
+
+@keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translateY(-100%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@keyframes slide-up {
+      0% { opacity: 1; -webkit-transform: translateY(0); }   
+    100% { opacity: 0; -webkit-transform: translateY(-100%); }
+}
+
+.note-title {
+  margin-top: 40px;
+}
